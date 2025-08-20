@@ -1,0 +1,128 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    width: 100%;
+    height: 60px;
+}
+
+.navcontainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+    color: white;
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    justify-items: start;
+    align-items: start;
+}
+
+.navcontainer li{
+    list-style: none;
+    display: inline;
+    margin: 0 5px;
+    font-size: 1.3rem;
+}
+
+.content{
+    height: auto;
+    width: 65vw;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(253, 236, 215);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 20px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+}
+
+.showcase{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info h2{
+    font-size: 2rem;
+}
+
+.info .ingredient, .info .steps{
+    font-size: 1.5rem;
+}
+
+.photo{
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s linear 0s;
+    border-radius: 20px;
+    box-shadow: 2px 4px 8px black;
+    margin-top: 20px;
+}
+
+.photo img{
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    transition: all 0.5s linear;
+}
+
+.photo:hover{
+    transform: scale(1.1);
+}
+
+.photo:hover .overlay{
+    opacity: 1;
+}
+
+.photo .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(43, 43, 43, 0.783);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    opacity: 0;
+    transition: all 0.3s linear 0s;
+}
+
+.overlay span{
+    font-weight: 700;
+    color: white;
+}
+
+footer p{
+    height: auto;
+    min-height: 30px;
+    width: 100%;
+    background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+    text-align: center;
+    line-height: 30px;
+    font-size: 1.2rem;
+    color: white;
+}
